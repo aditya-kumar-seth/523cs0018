@@ -10,7 +10,7 @@ const Log = async (stack, level, packageName, message) => {
         const validBackendPackages = [
             'cache', 'controller', 'cron_job', 'db', 'domain', 
             'handler', 'repository', 'route', 'service', 'middleware', 
-            'app', 'config', 'utils'   // ← Added these
+            'app', 'config', 'utils'   
         ];
 
         if (!validStacks.includes(stack)) {

@@ -19,12 +19,12 @@ app.use('/api', schedulerRoutes);
 // Health Check
 app.get('/', (req, res) => {
     res.json({ 
-        status: "✅ Server is running",
+        status: "Server is running",
         message: "Visit /api/schedule"
     });
 });
 
 app.listen(config.PORT, async () => {
-    console.log(`🚀 Server started successfully on http://localhost:${config.PORT}`);
+    console.log(`Server started successfully on http://localhost:${config.PORT}`);
     Log('backend', 'info', 'app', `Server started on port ${config.PORT}`);
 });

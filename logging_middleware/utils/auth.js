@@ -22,7 +22,7 @@ const getAuthToken = async () => {
         token = response.data.access_token;
         config.ACCESS_TOKEN = token;
 
-        Log('backend', 'info', 'auth', '✅ Token obtained successfully');
+        Log('backend', 'info', 'auth', 'Token obtained successfully');
         return token;
     } catch (error) {
         Log('backend', 'error', 'auth', `Token failed: ${error.message}`);
