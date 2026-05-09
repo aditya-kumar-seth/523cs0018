@@ -14,5 +14,6 @@ Use PostgreSQL with proper indexes on:
 - Used Redis for caching top notifications
 - Background jobs for email sending
 - Rate limiting for high traffic
+<img width="788" height="303" alt="Screenshot 2026-05-09 120437" src="https://github.com/user-attachments/assets/dfd9769d-6609-4501-a01e-cfd5570506c8" />
 
 **Recommended Architecture**: Priority Queue + Materialized Views + Background Workers for handling 50,000+ notifications efficiently.
